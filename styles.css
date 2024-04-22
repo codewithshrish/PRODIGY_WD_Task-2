@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    inline-size: 100%;
+    font-size: 16px;
+    block-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-image: url("https://www.hdwallpapers.in/download/colorful_glow_bright_lines_wave_dark_background_abstraction_4k_hd_abstract-2560x1440.jpg");
+    background-repeat: no-repeat;
+    margin-block-start: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 20px 65px;
+    block-size: 650px;
+    inline-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000de;
+    border-radius: 30px;
+    border: 2px solid #606060b3;
+    box-shadow: #0080ffcc 0px 2px 50px 16px;
+}
+
+.outer-circle {
+    inline-size: 270px;
+    block-size: 270px;
+    border-radius: 50%;
+    border: 3px solid #5f9fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    inline-size: 270px;
+    block-size: 270px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    color: #fff;
+    font-size: 23px;
+}
+.min {
+    font-size: 48px;
+}
+
+.sec {
+    font-size: 46px;
+}
+
+.msec {
+    font-size: 42px;
+}
+.buttons {
+    margin-block-start: 23px;
+    inline-size: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    inline-size: 70px;
+    block-size: 70px;
+    border-radius: 50%;
+    background-color: #2829807a;
+    border: 0px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    /* box-shadow: 5px 5px 5px 0px #49434393; */
+}
+.btn:hover {
+    background-color: rgb(0, 128, 255);
+}
+.playbtn{
+    transition: all 0.3s ease;
+    background-color: rgb(0, 87, 173);
+    z-index: 1;
+}
+.playbtn
+.resetbtn,
+.lapbtn{
+    transform: scale(0.9);
+}
+.playbtn.on{
+    background-color: #d92027;
+}
+.resetbtn,
+.lapbtn{
+    transition: all 0.3s ease;
+}
+
+.laps {
+    list-style: none;
+    color: #fff;
+    block-size: 350px;
+    inline-size: 250px;
+    overflow: auto;
+    position: relative;
+    margin-block-start: 20px;
+    /* padding: 20px 0px 20px 0px; */
+}
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-item {
+    inline-size: 100%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #c1eaf1;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-block-end: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.number {
+    color: #cbc8c8;
+}
+.time-stamp{
+    display: inline-block;
+    margin-inline-start: 25px;
+}
+
+.clearbtn {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    inset-block-end: 28px;
+    inset-inline-start: 50%;
+    transform: translate(-50%);
+    inline-size: 120px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: #10153bee;
+    border: 2px solid #0080ff;
+    color: #fff;
+}
+
+.clearbtn:hover {
+    background: #0080ff;
+}
+
+.visibility{
+    visibility: hidden;
+}
+
+.laptime {
+    display: none;
+}
+
+
+
+/* ---------------------------------------- */
+
+/* @media only screen and (max-inline-size:1024px) {
+    .container {
+        max-inline-size: 400px;
+        min-inline-size: 400px;
+        min-block-size: 840px;
+        max-block-size: 840px;
+    }
+
+    .laps {
+        block-size: 400px;
+    }
+}
+
+@media only screen and (max-inline-size:950px) {
+    .container {
+        max-inline-size: 400px;
+        min-inline-size: 400px;
+        min-block-size: 840px;
+        max-block-size: 840px;
+    }
+
+    .laps {
+        block-size: 400px;
+    }
+}
+
+@media only screen and (max-inline-size:872px) {
+    .container {
+        max-inline-size: 400px;
+        min-inline-size: 400px;
+        min-block-size: 750px;
+        max-block-size: 750px;
+    }
+
+    .laps {
+        block-size: 300px;
+    }
+}
+
+@media only screen and (max-inline-size:579px) {
+    .container {
+        max-inline-size: 400px;
+        min-inline-size: 400px;
+        min-block-size: 650px;
+        max-block-size: 650px;
+    }
+
+    .laps {
+        block-size: 240px;
+    }
+} */
